@@ -8,7 +8,7 @@
 }
 
 .loader .classSVG {
-    animation: breath .5s ease-in-out infinite;
+    animation: breath .7s ease-in-out infinite;
 }
 
 @keyframes breath {
