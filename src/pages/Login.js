@@ -1,42 +1,113 @@
-import React from 'react'
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { Alert } from "../components/Alert";
+import { useAuth } from "../context/authContext";
 import myIcon from "../assets/Logo.svg";
 
-
 function Login() {
+  const [user, setUser] = useState({
+    email: "",
+    password: "",
+  });
+  const { login, loginWithGoogle, resetPassword } = useAuth();
+  const [error, setError] = useState("");
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError("");
+    try {
+      await login(user.email, user.password);
+      navigate("/");
+    } catch (error) {
+      setError(error.message);
+    }
+  };
+
+  const handleChange = ({ target: { value, name } }) =>
+    setUser({ ...user, [name]: value });
+
+  const handleGoogleSignin = async () => {
+    try {
+      await loginWithGoogle();
+      navigate("/");
+    } catch (error) {
+      setError(error.message);
+    }
+  };
+
+  const handleResetPassword = async (e) => {
+    e.preventDefault();
+    if (!user.email) return setError("Write an email to reset password");
+    try {
+      await resetPassword(user.email);
+      setError("We sent you an email. Check your inbox");
+    } catch (error) {
+      switch (error.code) {
+        case "auth/invalid-email":
+          setError("Invalid Mail");
+          break;
+        case "auth/weak-password":
+          setError("Invalid Password");
+          break;
+        case "auth/email-already-in-use":
+          setError("e-mail is already in use");
+          break;
+          default:
+            setError("Incorrect email or password");
+            break;
+      }
+    }
+  };
 
   return (
-    <div className="flex w-screen h-screen items-center justify-center">
-      <div className="flex flex-col w-52 items-center justify-center bg-white border-gray-100 p-2">
+      <div className="flex flex-col w-full h-full items-center justify-center bg-white border-gray-100 p-2">
         <div className="flex flex-col items-center justify-center">
           <img src={myIcon} alt="myIcon" />
           <p className="w-52 text-center text-sm text-gray-600">
             Login or create an account with your email to start ordering
           </p>
+          {error && <Alert message={error} />}
         </div>
-        <form action="" className="flex flex-col gap-2">
-          <label className="text-sm font-medium">Email</label>
+        <form onSubmit={handleSubmit} className="flex flex-col gap-2">
+          <label htmlFor="email" className="text-sm font-medium">
+            Email
+          </label>
           <input
             type="email"
-            
+            name="email"
+            id="email"
+            onChange={handleChange}
             className="w-full border-2 border-gray-100 rounded-xl p-1 bg-transparent hover:bg-yellow-100"
             placeholder="Enter your email"
           />
-          <label className="text-sm font-medium">Password</label>
+          <label htmlFor="password" className="text-sm font-medium">
+            Password
+          </label>
           <input
-            
+            type="password"
+            name="password"
+            id="password"
+            onChange={handleChange}
             className="w-full border-2 border-gray-100 rounded-xl p-1 bg-transparent hover:bg-yellow-100"
             placeholder="Enter your password"
-            type={"password"}
           />
           <button
-            
+            type="submit"
             className="w-full active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01]  ease-in-out transform py-1 bg-yellow-1000 rounded-xl text-gray-800 font-bold text-sm hover:bg-yellow-400"
           >
             Login
           </button>
+          <a
+            className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
+            href="#!"
+            onClick={handleResetPassword}
+          >
+            Forgot Password?
+          </a>
         </form>
         <button
-          
+          onClick={handleGoogleSignin}
           className="flex items-center justify-center gap-2 active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01]  ease-in-out transform py-1  rounded-xl text-gray-700 font-semibold text-sm border-2 border-gray-100 hover:bg-blue-100 mt-2"
         >
           <svg
@@ -65,17 +136,13 @@ function Login() {
           </svg>
           Sign in with Google
         </button>
-        <div className="flex justify-center items-center">
-          <p className="font-medium text-xs">Don't have an account?</p>
-          <button
-            
-            className="ml-2 mb-1 font-medium text-xm text-violet-500"
-          >
-            Sign up
-          </button>
-        </div>
+      <p className="my-4 text-sm flex justify-between px-3 gap-1">
+        Don't have an account?
+        <Link to="/register" className="text-blue-700 hover:text-blue-900">
+          Register
+        </Link>
+      </p>
       </div>
-    </div>
   );
 }
 
