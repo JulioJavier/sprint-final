@@ -1,0 +1,235 @@
+{
+  "restaurants": [
+    {
+      "id": "R1",
+      "name": "The Pizza Place",
+      "description": "A cozy Italian restaurant that serves the best pizzas in town.",
+      "banner": "https://res.cloudinary.com/dfumgovrj/image/upload/v1676147703/sprint4_final/Banner/Banner_The_Pizza_Place_lhecqg.jpg",
+      "stars": 4,
+      "schedule": "11:00 - 22:00",
+      "logo": "https://res.cloudinary.com/dfumgovrj/image/upload/v1676147514/sprint4_final/Logos/The_Pizza_Place_otybwb.png",
+      "food-categories": ["pizza", "hamburger", "salad", "pasta"],
+      "menu": [
+        {
+          "idItem": "P1",
+          "name": "Margherita Pizza",
+          "description": "A classic pizza topped with tomato sauce, mozzarella cheese, and fresh basil.",
+          "price": 12.0,
+          "image": "https://res.cloudinary.com/dfumgovrj/image/upload/v1676147779/sprint4_final/Plates/Margherita_Pizza_jm2tmi.jpg",
+          "category": "pizza",
+          "cookingTime": "15-20 min"
+        },
+        {
+          "idItem": "H1",
+          "name": "Cheeseburger",
+          "description": "A juicy beef patty topped with melted cheddar cheese, lettuce, tomato, and pickles.",
+          "price": 8.0,
+          "image": "https://res.cloudinary.com/dfumgovrj/image/upload/v1676147782/sprint4_final/Plates/Cheeseburger_nms51b.jpg",
+          "category": "hamburger",
+          "cookingTime": "10-15 min"
+        },
+        {
+          "idItem": "S1",
+          "name": "Caesar Salad",
+          "description": "A classic salad made with crisp romaine lettuce, croutons, and a creamy Caesar dressing.",
+          "price": 7.0,
+          "image": "https://res.cloudinary.com/dfumgovrj/image/upload/v1676147774/sprint4_final/Plates/Caesar_Salad_erxi8v.jpg",
+          "category": "salad",
+          "cookingTime": "5-10 min"
+        },
+        {
+          "idItem": "PT1",
+          "name": "Spaghetti Carbonara",
+          "description": "A creamy pasta dish made with spaghetti, pancetta, egg yolks, and pecorino romano cheese.",
+          "price": 10.0,
+          "image": "https://res.cloudinary.com/dfumgovrj/image/upload/v1676147771/sprint4_final/Plates/Spaghetti_Carbonara_hvs3qj.jpg",
+          "category": "pasta",
+          "cookingTime": "10-12 min"
+        }
+      ]
+    },
+    {
+      "id": "R2",
+      "name": "The Pasta House",
+      "description": "A family-owned Italian restaurant serving homemade pasta dishes, salads, and breads.",
+      "banner": "https://res.cloudinary.com/dfumgovrj/image/upload/v1676147704/sprint4_final/Banner/Banner_The_Pasta_House_aqfgnv.jpg",
+      "stars": 4,
+      "schedule": "11:00 - 20:00",
+      "logo": "https://res.cloudinary.com/dfumgovrj/image/upload/v1676147514/sprint4_final/Logos/The_Pasta_House_r9nme3.png",
+      "food-categories": ["pasta", "salad"],
+      "menu": [
+        {
+          "idItem": "PT1",
+          "name": "Spaghetti Bolognese",
+          "description": "Spaghetti pasta with a rich meat sauce made from ground beef, tomatoes, and herbs.",
+          "price": 15.0,
+          "image": "https://res.cloudinary.com/dfumgovrj/image/upload/v1676147774/sprint4_final/Plates/Spaghetti_Bolognese_suvvvo.jpg",
+          "category": "pasta",
+          "cookingTime": "25-30 min"
+        },
+        {
+          "idItem": "PT2",
+          "name": "Penne alla Vodka",
+          "description": "Penne pasta in a creamy tomato sauce infused with vodka and topped with parmesan cheese.",
+          "price": 17.0,
+          "image": "https://res.cloudinary.com/dfumgovrj/image/upload/v1676147786/sprint4_final/Plates/Penne_alla_Vodka_czxkoh.jpg",
+          "category": "pasta",
+          "cookingTime": "20-35 min"
+        },
+        {
+          "idItem": "S1",
+          "name": "Caprese Salad",
+          "description": "A classic Italian salad made with fresh mozzarella, tomatoes, basil, and balsamic glaze.",
+          "price": 12.0,
+          "image": "https://res.cloudinary.com/dfumgovrj/image/upload/v1676147771/sprint4_final/Plates/Caprese_Salad_wuvs3e.jpg",
+          "category": "salad",
+          "cookingTime": "10-20 min"
+        },
+        {
+          "idItem": "S2",
+          "name": "Greek Salad",
+          "description": "A hearty salad with mixed greens, cucumbers, tomatoes, red onions, and feta cheese.",
+          "price": 14.0,
+          "image": "https://res.cloudinary.com/dfumgovrj/image/upload/v1676147782/sprint4_final/Plates/Greek_Salad_oobgsu.jpg",
+          "category": "salad",
+          "cookingTime": "5-10 min"
+        }
+      ]
+    },
+    {
+      "id": "R3",
+      "name": "The Burger Spot",
+      "description": "A fun and casual restaurant serving classic burgers, fries, and milkshakes.",
+      "banner": "https://res.cloudinary.com/dfumgovrj/image/upload/v1676147703/sprint4_final/Banner/Banner_The_Burger_Spot_lhsax6.jpg",
+      "stars": 5,
+      "schedule": "09:00 - 21:00",
+      "logo": "https://res.cloudinary.com/dfumgovrj/image/upload/v1676147514/sprint4_final/Logos/The_Burger_Spot_gl7lh1.png",
+      "food-categories": ["hamburger", "salad"],
+      "menu": [
+        {
+          "idItem": "H1",
+          "name": "Cheeseburger",
+          "description": "A juicy beef patty topped with melted cheddar cheese and served on a sesame seed bun.",
+          "price": 10.0,
+          "image": "https://res.cloudinary.com/dfumgovrj/image/upload/v1676147782/sprint4_final/Plates/Cheeseburger_nms51b.jpg",
+          "category": "hamburger",
+          "cookingTime": "15-20 min"
+        },
+        {
+          "idItem": "H2",
+          "name": "Bacon Burger",
+          "description": "A classic cheeseburger with crispy bacon added for extra flavor.",
+          "price": 12.0,
+          "image": "https://res.cloudinary.com/dfumgovrj/image/upload/v1676147780/sprint4_final/Plates/Bacon_Burger_rnmm3h.jpg",
+          "category": "hamburger",
+          "cookingTime": "20-25 min"
+        },
+        {
+          "idItem": "S3",
+          "name": "Caesar Salad",
+          "description": "A classic salad with romaine lettuce, croutons, parmesan cheese, and caesar dressing.",
+          "price": 8.0,
+          "image": "https://res.cloudinary.com/dfumgovrj/image/upload/v1676147774/sprint4_final/Plates/Caesar_Salad_erxi8v.jpg",
+          "category": "salad",
+          "cookingTime": "10-15 min"
+        },
+        {
+          "idItem": "S4",
+          "name": "Southwest Salad",
+          "description": "A tasty salad with mixed greens, corn, black beans, avocado, and a spicy southwest dressing.",
+          "price": 10.0,
+          "image": "https://res.cloudinary.com/dfumgovrj/image/upload/v1676147773/sprint4_final/Plates/Southwest_Salad_a87wlk.jpg",
+          "category": "salad",
+          "cookingTime": "5-10 min"
+        }
+      ]
+    },
+    {
+      "id": "R4",
+      "name": "Pizza & Pasta Palace",
+      "description": "A casual Italian-style eatery serving up delicious pizza and pasta dishes.",
+      "banner": "https://res.cloudinary.com/dfumgovrj/image/upload/v1676147702/sprint4_final/Banner/Banner_Pizza_Pasta_Palace_frqjvj.jpg",
+      "stars": 4,
+      "schedule": "08:00 - 24:00",
+      "logo": "https://res.cloudinary.com/dfumgovrj/image/upload/v1676147514/sprint4_final/Logos/Pizza_Pasta_Palace_hbqeod.png",
+      "food-categories": ["pizza", "pasta"],
+      "menu": [
+        {
+          "idItem": "P1",
+          "name": "Margherita Pizza",
+          "description": "A classic pizza with a tomato sauce, mozzarella cheese, and fresh basil.",
+          "price": 14.0,
+          "image": "https://res.cloudinary.com/dfumgovrj/image/upload/v1676147779/sprint4_final/Plates/Margherita_Pizza_jm2tmi.jpg",
+          "category": "pizza",
+          "cookingTime": "30-35 min"
+        },
+        {
+          "idItem": "P2",
+          "name": "Pepperoni Pizza",
+          "description": "A pizza with a tomato sauce, mozzarella cheese, and slices of spicy pepperoni.",
+          "price": 16.0,
+          "image": "https://res.cloudinary.com/dfumgovrj/image/upload/v1676147780/sprint4_final/Plates/Pepperoni_Pizza_rnsljz.jpg",
+          "category": "pizza",
+          "cookingTime": "25-30 min"
+        },
+        {
+          "idItem": "PT3",
+          "name": "Fettuccine Alfredo",
+          "description": "Fettuccine pasta in a creamy sauce made from parmesan cheese and heavy cream.",
+          "price": 18.0,
+          "image": "https://res.cloudinary.com/dfumgovrj/image/upload/v1676147780/sprint4_final/Plates/Fettuccine_Alfredo_lrylcr.jpg",
+          "category": "pasta",
+          "cookingTime": "20-25 min"
+        },
+        {
+          "idItem": "PT4",
+          "name": "Spaghetti Carbonara",
+          "description": "Spaghetti pasta with a sauce made from eggs, bacon, and parmesan cheese.",
+          "price": 20.0,
+          "image": "https://res.cloudinary.com/dfumgovrj/image/upload/v1676147771/sprint4_final/Plates/Spaghetti_Carbonara_hvs3qj.jpg",
+          "category": "pasta",
+          "cookingTime": "25-30 min"
+        }
+      ]
+    },
+    {
+      "id": "R5",
+      "name": "The Burger Joint",
+      "description": "A popular spot for juicy burgers, loaded fries, and milkshakes.",
+      "banner": "https://res.cloudinary.com/dfumgovrj/image/upload/v1676147700/sprint4_final/Banner/Banner_The_Burger_Joint_lu2fsp.jpg",
+      "stars": 4,
+      "schedule": "13:00 - 24:00",
+      "logo": "https://res.cloudinary.com/dfumgovrj/image/upload/v1676147514/sprint4_final/Logos/The_Burger_Joint_hrxa9k.png",
+      "food-categories": ["hamburger"],
+      "menu": [
+        {
+          "idItem": "H1",
+          "name": "The Classic Burger",
+          "description": "A juicy beef patty topped with lettuce, tomato, cheese, and thousand island dressing.",
+          "price": 12.0,
+          "image": "https://res.cloudinary.com/dfumgovrj/image/upload/v1676147774/sprint4_final/Plates/The_Classic_Burger_jfknvm.jpg",
+          "category": "hamburger",
+          "cookingTime": "20-25 min"
+        },
+        {
+          "idItem": "H2",
+          "name": "The BBQ Burger",
+          "description": "A beef patty topped with crispy bacon, cheddar cheese, and tangy BBQ sauce.",
+          "price": 14.0,
+          "image": "https://res.cloudinary.com/dfumgovrj/image/upload/v1676147775/sprint4_final/Plates/The_BBQ_Burger_gidi63.jpg",
+          "category": "hamburger",
+          "cookingTime": "25-30 min"
+        },
+        {
+          "idItem": "H3",
+          "name": "The Veggie Burger",
+          "description": "A plant-based patty topped with lettuce, tomato, and mayo.",
+          "price": 10.0,
+          "image": "https://res.cloudinary.com/dfumgovrj/image/upload/v1676147774/sprint4_final/Plates/The_Veggie_Burger_iwyjeh.jpg",
+          "category": "hamburger",
+          "cookingTime": "15-20 min"
+        }
+      ]
+    }
+  ]
+}
