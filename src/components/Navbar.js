@@ -4,7 +4,7 @@ const Navbar = () => {
   const location = useLocation();
   // className={location.pathname === "/" ? "fill-yellow-1000" : "fill-black hover:fill-yellow-1000 "}
   return (
-    <nav className="fixed bottom-2 flex w-screen h-8 justify-around items-center">
+    <nav className="fixed bottom-0 flex w-screen h-12 justify-around items-center bg-white">
       <NavLink
         to="/"
         className={
